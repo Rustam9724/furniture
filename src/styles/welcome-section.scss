@@ -1,0 +1,186 @@
+.welcome-section {
+    background: url("../../public/assets/images/welcome-section-background.jpg") no-repeat center top;
+    background-size: cover;
+    padding: 44px 0 49px;
+    width: 100%;
+    margin: 0 auto;
+    
+    .welcome-section__title {
+        color: white;
+        text-align: center;
+        font-size: 3.2rem;
+        font-weight: 800;
+        line-height: normal;
+        margin: 0 0 37px;
+    }
+
+    .discounts {
+        width: 100%;
+        background: linear-gradient(102deg, rgba(255, 255, 255, 0.40) 8.06%, rgba(255, 255, 255, 0.35) 95.66%);
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(9.5px);
+        border-radius: 26px;
+        padding: 8px 10px 10px;
+        color: #FFF;
+        margin: 0 0 178px;
+
+        .discounts__title {
+            text-align: center;
+            font-size: 2.4rem;
+            font-weight: 800;
+            line-height: normal;
+            margin: 0 0 5px;
+        }
+
+        .discounts__text {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 138.687%;
+            letter-spacing: 0.525px;
+            max-width: 339px;
+            margin: 0 auto 21px;
+        }
+
+        .discounts__button {
+            padding: 8px 27px;
+            margin: 0 auto;
+            border-radius: 12px;
+            display: block;
+            background: linear-gradient(94deg, #EF36FF 39.68%, #9563FF 98.93%);
+            box-shadow: 0px 1px 23px 0px rgba(239, 54, 255, 0.79);
+
+            &::after {
+                content: "-20%";
+                position: absolute;
+                left: -13px;
+                bottom: -10px;
+                width: 54px;
+                height: 54px;
+                background: linear-gradient(136deg, rgba(255, 0, 0, 0.9) 44.86%, rgba(255, 90, 90, 0.9) 95.86%);
+                border-radius: 100%;
+                transform: rotate(-33deg);
+                color: rgba(255, 255, 255, 0.80);
+                font-size: 1.6rem;
+                font-weight: 800;
+                line-height: 54px;
+            }
+        }
+    }
+
+    .wellcome-section__main {
+        padding: 18px 41px 21px 55px;
+        background: rgba(255, 255, 255, 0.70);
+        border-radius: 35px;
+
+        .wellcome-carousel {
+            .welcome-carousel__radio {
+                display: flex;
+                justify-content: center;
+                column-gap: 6px;
+                margin: 0 0 16px;
+    
+                input:checked + label {
+                    background-color: #8E35FF;
+                    border: none;
+                    box-shadow: 0px 7px 13px 0px rgba(239, 54, 255, 0.79);
+                }
+    
+                label {
+                    display: block;
+                    width: 13px;
+                    height: 13px;
+                    border: 2px solid gray;
+                    border-radius: 100%;
+                    cursor: pointer;
+                }
+            }
+        }
+
+
+        .welcome-carousel__body {
+            display: flex;
+            overflow: hidden;
+
+            .welcome-carousel__item {
+                flex: 1 0 100%;
+                position: relative;
+
+                .welcome-carousel__item__title {
+                    font-size: 2.4rem;
+                    text-shadow: 0px 4px 29px rgba(0, 0, 0, 0.25);
+                    font-weight: 700;
+                    line-height: normal;
+                    background: linear-gradient(90deg, #EF36FF -0.87%, rgba(172, 36, 255, 0.98) 59.09%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    margin: 0 0 15px;
+                }
+
+                .welcome-carousel__item__text {
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    line-height: 140.187%;
+                    letter-spacing: 0.56px;
+                    background: linear-gradient(90deg, rgba(235, 0, 255, 0.80) 3.59%, rgba(173, 0, 255, 0.80) 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    max-width: 286px;
+                    margin: 0 0 21px;
+                }
+
+            }
+            
+        }
+
+        .weclome-section__button {
+            padding: 14px 14px 14px 54px;
+            
+            box-shadow: 0px 7px 13px 0px rgba(239, 54, 255, 0.79);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 264px;
+            margin: 0 auto 39px;
+
+            p {
+                color: #FFF;
+                font-size: 2.4rem;
+                font-weight: 500;
+            }
+
+            div {
+                width: 46px;
+                aspect-ratio: 1;
+                border-radius: 18px;
+                background: rgba(196, 196, 196, 0.40);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 3rem;
+            }
+        }
+
+        .welcome-section__have-account {
+            color: #000;
+            text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+            font-size: 1.6rem;
+            font-weight: 300;
+            line-height: 19/16 * 100%;
+            text-align: center;
+            
+            a {
+                background: linear-gradient(91deg, #EF36FF 82.68%, #477BFF 101.12%);
+                background-clip: text;
+                // -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 1.6rem;
+                font-weight: 700;
+                // border-bottom: 2px solid #EF36FF;
+            }
+        }
+    }
+}

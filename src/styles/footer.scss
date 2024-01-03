@@ -1,0 +1,25 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    border-radius: 30px;    
+    background: linear-gradient(93deg, rgba(47, 63, 85, 1) 8.06%, rgba(49, 48, 94, 0.46) 56.35%, rgba(23, 41, 68, 1) 90.84%);
+    backdrop-filter: blur(10px);
+}
+
+.footer__item {
+    width: 25%;
+    aspect-ratio: 125/105;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+
+    &.footer__item_active {
+        background: rgba(10, 10, 10, 0.42);
+        backdrop-filter: blur(20.5px);
+        border-radius: 30px;
+    }
+}

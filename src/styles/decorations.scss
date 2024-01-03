@@ -1,0 +1,261 @@
+.decorations {
+    padding: 46px 0 0;
+    background: url("../../public/assets/images/decorations-background.jpg") no-repeat center top;
+    
+    .decorations__container {
+        position: relative;
+        max-width: 446px;
+    }
+
+    .decorations__header {
+        display: flex;
+        column-gap: 15px;
+        align-items: center;
+        margin: 0 0 30px;
+
+        .decorations__search {
+            border-radius: 26px;
+            background: linear-gradient(94deg, rgba(71, 68, 116, 0.70) -1.12%, rgba(50, 47, 81, 0.70) 104.55%);
+            padding: 0 21px;
+            max-width: 312px;
+        
+            input {
+                background: url("../../public/assets/images/glass.svg") no-repeat left center;
+                color: rgba(255, 255, 255, 0.60);
+                font-size: 2rem;
+                line-height: 59/20 * 100%;
+                padding-left: 40px;
+                outline: none;
+                
+                &::placeholder {
+                    color: rgba(255, 255, 255, 0.60);
+                }
+            }
+        }
+
+        .decorations__notififications {
+            padding: 10px 15.5px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.08);
+        }
+    }
+
+    .notifications__title-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+        margin: 0 0 16px;
+
+        .notifications__title {
+            color: #FFF;
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 123.188%;
+            letter-spacing: 0.6px;
+            max-width: 220px;
+        }
+    }
+
+    .notifications__carousel {
+        overflow: hidden;
+        display: flex;
+        column-gap: 21px;
+        align-items: center;
+        margin: 0 0 20px;
+
+        .notifications__carousel__item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 25px;
+            background: rgba(71, 68, 116, 0.75);
+            flex-shrink: 0;
+            width: 87px;
+            height: 116px;
+            
+            &.notifications__carousel__item_active {
+                width: 100px;
+                height: 134px;
+                background: #CD1EFF;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            }
+
+            p {
+                color: #FFF;
+                font-family: Roboto;
+                font-size: 3.2rem;
+                font-weight: 800;
+                line-height: 38/32 * 100%;
+            }
+        }
+    }
+
+    .decorations__cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        padding-top: 65px;
+
+        .decorations__active-window {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 221px;
+            border-radius: 25px;
+            background: linear-gradient(94deg, rgba(71, 68, 116, 0.70) -1.12%, rgba(50, 47, 81, 0.70) 104.55%);
+            padding-top: 8px;
+
+            .promotion {
+                display: flex;
+                align-items: center;
+                column-gap: 12px;
+                justify-content: center;
+
+                p {
+                    color: white;
+                    font-family: Roboto;
+                    font-size: 2.2rem;
+                    font-weight: 700;
+                    line-height: 138.687%;
+                    letter-spacing: 0.77px;
+                }
+
+                .promotion__timer {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 9px;
+                    padding: 9px 11.5px;
+                    border-radius: 103px;
+                    background: rgba(10, 11, 29, 0.39);
+
+                    p {
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                        line-height: 138.687%;
+                        letter-spacing: 0.56px;
+                        background: linear-gradient(97deg, #FF3939 11.54%, #FF6363 106.35%);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+        }
+
+        .decorations__card {
+            position: relative;
+            z-index: 1;
+            width: 351px;
+            height: 97px;
+            border-radius: 25px;
+            background: #2B2853;
+
+            &:not(:last-child) {
+                margin-bottom: 9px;
+            }
+            
+            .decorations__card__main {
+                display: flex;
+                column-gap: 14px;
+
+                .decoraitions__card__image {
+                    border-radius: 25px;
+                    background: linear-gradient(148deg, rgba(115, 49, 255, 0.90) 8.96%, rgba(115, 49, 255, 0.00) 83.97%);
+                    padding: 12px 12px 15px;
+
+                    img {
+                        width: 54px;
+                        height: 70px;
+                    }
+                }
+
+                .dec-description {
+                    padding: 14px 14px 4px 0;
+                    color: #FFF;
+
+                    .dec-description__title {
+                        font-size: 1.6rem;
+                        font-weight: 800;
+                        line-height: 19/16 * 100%;
+                        margin: 0 0 2px;
+                    }
+
+                    p {
+                        font-size: 1.1rem;
+                        line-height: 138.687%;
+                        letter-spacing: 0.385px;
+                        margin: 0 0 5px;
+                    }
+
+                    .dec-description__price {
+                        display: inline-block;
+                        padding: 3px 3.5px 1px;
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        line-height: 138.687%;
+                        letter-spacing: 0.42px;
+                        border-radius: 6px;
+                        background: rgba(30, 26, 81, 0.60);
+
+                        &:not(:last-child) {
+                            margin-right: 3px;
+                        }
+                    }
+                }
+            }
+
+            &.decorations__card_active {
+                width: 380px;
+                height: 132px;
+                background: #2B2853;
+
+                &:not(:last-child) {
+                    margin-bottom: 38px;
+                }
+
+                .decorations__card__main {
+                    column-gap: 31px;
+
+                    .decoraitions__card__image {
+                        background: linear-gradient(148deg, rgba(115, 49, 255, 0.90) 8.96%, rgba(115, 49, 255, 0.00) 83.97%);
+                        padding: 16px 21px 17px 16px;
+
+                        img {
+                            width: 59px;
+                            height: 99px;
+                        }
+                    }
+
+                    .dec-description {
+                        padding: 8px 14px 8px 0;
+
+                        .dec-description__title {
+                            font-size: 2.4rem;
+                            margin: 0 0 6px;
+                        }
+
+                        p {
+                            font-size: 1.5rem;
+                            letter-spacing: 0.525px;
+                            margin: 0 0 10px;
+                        }
+
+                        .dec-description__price {
+                            padding: 5.5px 11.5px;
+                            font-size: 1.4rem;
+                            letter-spacing: 0.49px;
+                            border-radius: 9px;
+
+                            &:not(:last-child) {
+                                margin-right: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
