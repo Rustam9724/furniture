@@ -8,7 +8,7 @@ import DeskLamp from './components/DeskLamp';
 function App() {
   return (
     <div className="wrapper">
-      <Router basename="/">
+      <Router basename="/furniture">
         <Routes>
           <Route path="/" element={<WelcomeSection/>}/>
           <Route path="/sign-in" element={<SignInSection/>}/>
