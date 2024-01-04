@@ -102,11 +102,13 @@
                 padding-right: 5px;
             }
 
-            div {
-                min-width: 25px;
-                aspect-ratio: 25/23;
-                background-image: url("../../public/assets/images/show-password.svg");
-            }
+            // div {
+            //     // min-width: 25px;
+            //     // aspect-ratio: 25/23;
+            //     // background-image: url("../../public/assets/images/eye-on.svg");
+            //     // cursor: pointer;
+            //     // background-size: cover;
+            // }
         }
 
         &.label_name input {
