@@ -1,24 +1,23 @@
 {
   "files": {
-    "main.css": "/furniture/static/css/main.a65b2eb3.css",
-    "main.js": "/furniture/static/js/main.7439d9c9.js",
+    "main.css": "/furniture/static/css/main.b3138e94.css",
+    "main.js": "/furniture/static/js/main.3e800072.js",
     "static/media/sign-in-section-background.jpg": "/furniture/static/media/sign-in-section-background.131ef7a32decba2ade03.jpg",
     "static/media/welcome-section-background.jpg": "/furniture/static/media/welcome-section-background.d4126f26c60d59ac09ff.jpg",
     "static/media/sign-up-section-background.jpg": "/furniture/static/media/sign-up-section-background.d7f1fee08f8c205eef5c.jpg",
     "static/media/decorations-background.jpg": "/furniture/static/media/decorations-background.01b89f1544cdeb3df656.jpg",
     "static/media/desk-lamp-background.jpg": "/furniture/static/media/desk-lamp-background.2ab0d1646666d6e09aed.jpg",
-    "static/media/show-password.svg": "/furniture/static/media/show-password.fa91ba81ec3fc177ebe4.svg",
     "static/media/name.svg": "/furniture/static/media/name.49083401d0302b2bebd4.svg",
     "static/media/glass.svg": "/furniture/static/media/glass.250cc17a86aeea7cd53e.svg",
     "index.html": "/furniture/index.html",
     "static/media/mobile.svg": "/furniture/static/media/mobile.389ec4d1d79a5f7fa911.svg",
     "static/media/password.svg": "/furniture/static/media/password.c821c13d41715f0a6831.svg",
     "static/media/email.svg": "/furniture/static/media/email.2d5201959424c2005805.svg",
-    "main.a65b2eb3.css.map": "/furniture/static/css/main.a65b2eb3.css.map",
-    "main.7439d9c9.js.map": "/furniture/static/js/main.7439d9c9.js.map"
+    "main.b3138e94.css.map": "/furniture/static/css/main.b3138e94.css.map",
+    "main.3e800072.js.map": "/furniture/static/js/main.3e800072.js.map"
   },
   "entrypoints": [
-    "static/css/main.a65b2eb3.css",
-    "static/js/main.7439d9c9.js"
+    "static/css/main.b3138e94.css",
+    "static/js/main.3e800072.js"
   ]
 }
