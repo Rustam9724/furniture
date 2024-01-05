@@ -1,4 +1,32 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
 function SignUpSection() {
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+    const dropdownHeaderStyle = {
+        width: '80px',
+        height: '42px',
+        borderRadius: isDropdownOpen ? '11px 11px 0 0' : '11px',
+        background: 'rgba(31, 31, 31, 0.50)',
+        display: 'flex',
+        justifyContent: 'center',
+        columnGap: '5px',
+        alignItems: 'center'
+    }
+
+    const dropdownListStyle = {
+        display: 'flex',
+        flexDirection: 'column',
+        display: isDropdownOpen ? 'block' : 'none',
+        position: 'absolute',
+    }
+
+    const dropdownArrowStyle = {
+        transform: isDropdownOpen ? 'rotate(180deg)' : 'unset',
+        transition: 'all 0.2s ease-out'
+    }
+
     return (
         <section className="sign-section sign-section__sign-up">
             <div className="sign-section__container _container">
@@ -11,19 +39,39 @@ function SignUpSection() {
                 </div>
                 <div className="sign-section__main sign-main sign-main_sign-up">
                     <h2 className="sign-main__title">Sign Up</h2>
-                    <p className="sign-main__subtitle">You already have an account? <a>Sign in</a></p>
+                    <p className="sign-main__subtitle">You already have an account? <Link to="/sign-in">Sign in</Link></p>
                     <form>
                         <label htmlFor="" className="label label_email">
                             <input type="email" placeholder="Email adress"/>
                         </label>
                         <label htmlFor="" className="label label_name">
-                            <input type="password" placeholder="Password"/>
+                            <input type="text" placeholder="Password"/>
                             <div></div>
                         </label>
                         <label htmlFor="" className="label label_mobile">
-                            <input type="password" placeholder="Mobile"/>
-                            <select name="" id="">
-                            </select>
+                            <input type="tel" placeholder="Mobile"/>
+                            <div className="dropdown" onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
+                                <div className="dropdown__header" style={dropdownHeaderStyle}>
+                                    <svg style={dropdownArrowStyle} width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.9393 13.0607C11.5251 13.6464 12.4749 13.6464 13.0607 13.0607L22.6066 3.51472C23.1924 2.92893 23.1924 1.97919 22.6066 1.3934C22.0208 0.807611 21.0711 0.807611 20.4853 1.3934L12 9.87868L3.51472 1.3934C2.92893 0.807611 1.97919 0.807611 1.3934 1.3934C0.807611 1.97919 0.807611 2.92893 1.3934 3.51472L10.9393 13.0607ZM10.5 11V12H13.5V11H10.5Z" fill="white" fill-opacity="0.6"/>
+                                    </svg>
+                                    <img src="./assets/images/flag.svg" alt=""/>
+                                </div>
+                                <div className="dropdown__list" style={dropdownListStyle}>
+                                    <div className="dropdown__item">
+                                        <img src="./assets/images/flag.svg" alt="" />
+                                    </div>
+                                    <div className="dropdown__item">
+                                        <img src="./assets/images/flag.svg" alt="" />
+                                    </div>
+                                    <div className="dropdown__item">
+                                        <img src="./assets/images/flag.svg" alt="" />
+                                    </div>
+                                    <div className="dropdown__item">
+                                        <img src="./assets/images/flag.svg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
                         </label>
                         <p className="sign-in__agree">
                             By signing up you’re agree to our <a>Terms &#38; Conditions and Privacy Policy</a>
