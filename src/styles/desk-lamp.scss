@@ -105,31 +105,50 @@
                 align-items: center;
                 column-gap: 6px;
                 margin: 0 0 26px;
+                width: max-content;
+                height: 35px;
+                justify-content: space-between;
 
                 .desk-lamp__variant-round {
                     width: 25px;
                     height: 25px;
                     border-radius: 100%;
+                    cursor: pointer;
+                    transition: all 0.2s ease-in-out;
                     
                     &.desk-lamp__variant-round_active {
                         width: 35px;
                         height: 35px;
-                        border: 2.5px solid #F15E84;
                         padding: 2.5px;
                         background-clip: content-box;
-                        filter: drop-shadow(0px 1px 11px #D68197);
                     }
-
+                    
                     &:first-child {
-                        background-color: #D68197;
+                        background-color: #D68197; //214% 129% 150%
+
+                        &.desk-lamp__variant-round_active {
+                            border: 2.5px solid #F15E84; //241% 94% 131%
+                            filter: drop-shadow(0px 1px 11px #D68197);
+                        }
+
                     }
 
                     &:nth-child(2) {
                         background-color: #EFB695;
+
+                        &.desk-lamp__variant-round_active {
+                            border: 2.5px solid #FF9382;
+                            filter: drop-shadow(0px 1px 11px #EFB695);
+                        }
                     }
 
                     &:last-child {
                         background-color: #907DFF;
+                    
+                        &.desk-lamp__variant-round_active {
+                            border: 2.5px solid #AD5AEC;
+                            filter: drop-shadow(0px 1px 11px #907DFF);
+                        }
                     }
                 }
             }
@@ -166,6 +185,7 @@
                     position: relative;
                     width: 21px;
                     height: 21px;
+                    cursor: pointer;
 
                     div {
                         background-color: white;
@@ -202,7 +222,7 @@
                     height: 4px;
                     border-radius: 47px;
                     background-color: white;
-
+                    cursor: pointer;
                 }
             }
 

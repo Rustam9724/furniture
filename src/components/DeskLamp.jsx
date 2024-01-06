@@ -1,15 +1,27 @@
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+
 
 function DeskLamp() {
+    const [activeColor, setActiveColor] = useState('pink');
+    const [lampQuantity, setLampQuantity]= useState(1);
+
+    function decrease() {
+        if (lampQuantity > 1) {
+            setLampQuantity(lampQuantity - 1)
+        }
+    }
+
     return (
         <section className="desk-lamp">
             <div className="desk-lamp__container _container">
                 <div className="desk-lamp__header">
-                    <div className="desk-lamp__back-arrow">
+                    <Link className="desk-lamp__back-arrow" to="/main">
                         <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.939341 10.9393C0.353554 11.5251 0.353554 12.4749 0.939341 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92894 13.1924 1.97919 12.6066 1.3934C12.0208 0.807615 11.0711 0.807615 10.4853 1.3934L0.939341 10.9393ZM3 10.5H2V13.5H3V10.5Z" fill="white"/>
                         </svg>
-                    </div>
+                    </Link>
                     <div className="desk-lamp__title">Desk Lamp</div>
                     <div className="desk-lamp__burger-btn">
                         <div></div>
@@ -48,9 +60,18 @@ function DeskLamp() {
                     <div className="desk-lamp__curtain">
                     </div>
                     <div className="desk-lamp__variant-rounds">
-                        <div className="desk-lamp__variant-round desk-lamp__variant-round_active"></div>
-                        <div className="desk-lamp__variant-round"></div>
-                        <div className="desk-lamp__variant-round"></div>
+                        <div
+                            className={`desk-lamp__variant-round ${activeColor === 'pink' && 'desk-lamp__variant-round_active'}`}
+                            onClick={() => setActiveColor('pink')}
+                        />
+                        <div 
+                            className={`desk-lamp__variant-round ${activeColor === 'yellow' && 'desk-lamp__variant-round_active'}`}
+                            onClick={() => setActiveColor('yellow')}
+                        />
+                        <div className="desk-lamp__variant-round"
+                            className={`desk-lamp__variant-round ${activeColor === 'blue' && 'desk-lamp__variant-round_active'}`}
+                            onClick={() => setActiveColor('blue')}
+                        />
                     </div>
                     <h2 className="desk-lamp__description-title">Desk Metal Lamp</h2>
                     <p className="desk-lamp__description">
@@ -58,12 +79,12 @@ function DeskLamp() {
                         dolore magna aliqua. Ut enim ad minim veniam.
                     </p>
                     <div className="desk-lamp__quantity">
-                        <div className="desk-lamp__quantity__plus">
+                        <div className="desk-lamp__quantity__plus" onClick={() => setLampQuantity(lampQuantity + 1)}>
                             <div></div>
                             <div></div>
                         </div>
-                        <p>01</p>
-                        <div className="desk-lamp__quantity__minus">
+                        <p>{lampQuantity}</p>
+                        <div className="desk-lamp__quantity__minus" onClick={decrease}>
                         </div>
                     </div>
                     <div className="desk-lamp__card-block">
