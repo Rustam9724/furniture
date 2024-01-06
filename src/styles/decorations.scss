@@ -204,6 +204,16 @@
                         letter-spacing: 0.42px;
                         border-radius: 6px;
                         background: rgba(30, 26, 81, 0.60);
+                        
+                        &.dec-description__price_old-price {
+                            color: #FF4747;
+                    
+                            span {
+                                text-decoration: line-through;
+                                color: white;
+                            }
+                        }
+
 
                         &:not(:last-child) {
                             margin-right: 3px;

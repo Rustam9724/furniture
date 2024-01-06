@@ -142,7 +142,9 @@ function Decorations() {
                                 <div className="decorations__card__description dec-description">
                                     <h2 className="dec-description__title">Desk Lamp</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <div className="dec-description__price">$34.99 $23.99</div>
+                                    <div className="dec-description__price dec-description__price_old-price">
+                                        <span>$34.99</span> $23.99
+                                    </div>
                                 </div>
                             </div>
                         </div>
