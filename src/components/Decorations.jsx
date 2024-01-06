@@ -1,24 +1,29 @@
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Decorations() {
     const [slideNumber, setSliderNumber] = useState(0);
     const [productNumber, setProductNumber] = useState(0);
+    const [seconds, setSeconds] = useState(34642);
 
     // Слайдер
-    let sliderPoints = {
+    let points = {
         startPoint: null,
-        finishPoint: null
+        finishPoint: null,
     }
 
-    function setSliderStartPoint(e) {
-        sliderPoints.startPoint = e.changedTouches[0].clientX;
+    function setStartPoint(e, direction) {
+        if (direction === 'X') {
+            points.startPoint = e.changedTouches[0].clientX;
+        } else {
+            points.startPoint = e.changedTouches[0].clientY;
+        }
     }
-
+    
     function setSliderFinishPoint(e) {
-        sliderPoints.finishPoint = e.changedTouches[0].clientX;
-        let pointsDifference = sliderPoints.startPoint - sliderPoints.finishPoint
+        points.finishPoint = e.changedTouches[0].clientX;
+        let pointsDifference = points.startPoint - points.finishPoint
 
         if (Math.abs(pointsDifference) >= 20) {
             if (pointsDifference < 0) {
@@ -37,19 +42,9 @@ function Decorations() {
         marginLeft: `${slideNumber * -28}%`,
     }
 
-    // Продукты
-    let productsPoints = {
-        startPoint: null,
-        finishPoint: null
-    }
-
-    function setProductsStartPoint(e) {
-        productsPoints.startPoint = e.changedTouches[0].clientY;
-    }
-
     function setProductsFinishPoint(e) {
-        productsPoints.finishPoint = e.changedTouches[0].clientY;
-        let pointsDifference = productsPoints.startPoint - productsPoints.finishPoint
+        points.finishPoint = e.changedTouches[0].clientY;
+        let pointsDifference = points.startPoint - points.finishPoint
 
         if (Math.abs(pointsDifference) >= 20) {
             if (pointsDifference < 0) {
@@ -68,6 +63,21 @@ function Decorations() {
         marginTop: `${productNumber * -36}%`,
     }
 
+    // Таймер
+    useEffect(() => {
+        setTimeout(() => {
+            setSeconds(seconds - 1)
+        }, 1000)
+    })
+
+    let time = {
+        hours:  `${Math.trunc(seconds/3600)}`,
+        minutes: 
+            Math.trunc((seconds - Math.trunc(seconds/3600)*3600)/60) < 10 ? `0${Math.trunc((seconds - Math.trunc(seconds/3600)*3600)/60)}` : `${Math.trunc((seconds - Math.trunc(seconds/3600)*3600)/60)}`,
+        seconds: 
+            seconds-Math.trunc(seconds/60)*60 < 10 ? `0${seconds-Math.trunc(seconds/60)*60}` : `${seconds-Math.trunc(seconds/60)*60}`
+    }
+
     return (
         <section className="decorations">
             <div className="decorations__container _container">
@@ -83,7 +93,7 @@ function Decorations() {
                     <h1 className="notifications__title">Find the unique decorations for your home</h1>
                     <img src="./assets/images/candle.svg" alt="" />
                 </div>
-                <div className="notifications__carousel" onTouchStart={e => setSliderStartPoint(e)} onTouchEnd={e => setSliderFinishPoint(e)}>
+                <div className="notifications__carousel" onTouchStart={e => setStartPoint(e, 'X')} onTouchEnd={e => setSliderFinishPoint(e)}>
                     <div 
                         className={`notifications__carousel__item ${slideNumber === 0 && 'notifications__carousel__item_active'}`}
                         style={carouselItemStyle}
@@ -113,7 +123,7 @@ function Decorations() {
                         </svg>
                     </div>
                 </div>
-                <div className="decorations__cards" onTouchStart={e => setProductsStartPoint(e)} onTouchEnd={e => setProductsFinishPoint(e)}>
+                <div className="decorations__cards" onTouchStart={e => setStartPoint(e, 'Y')} onTouchEnd={e => setProductsFinishPoint(e)}>
                     <Link className={`decorations__card ${productNumber === 0 && 'decorations__card_active'}`} to="/desk-lamp" style={productsItemStyle}>
                         <div className={productNumber === 0 && `active-card__wrapper`}>
                             <div className="decoraions__card__promotion promotion">
@@ -122,7 +132,7 @@ function Decorations() {
                                     <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10.4615 0C11.1849 0 11.7692 0.559766 11.7692 1.25C11.7692 1.94023 11.1849 2.5 10.4615 2.5H9.80769V3.8457C11.3401 4.07031 12.7377 4.6875 13.882 5.58594L14.7688 4.74219C15.2796 4.25391 16.105 4.25391 16.6159 4.74219C17.1267 5.23047 17.1267 6.01953 16.6159 6.50781L15.631 7.45313C16.4974 8.72266 17 10.2422 17 11.875C17 16.3633 13.1954 20 8.5 20C3.80457 20 0 16.3633 0 11.875C0 7.8125 3.11885 4.44531 7.19231 3.8457V2.5H6.53846C5.81514 2.5 5.23077 1.94023 5.23077 1.25C5.23077 0.559766 5.81514 0 6.53846 0H10.4615ZM9.48077 7.5C9.48077 6.98047 9.04351 6.5625 8.5 6.5625C7.95649 6.5625 7.51923 6.98047 7.51923 7.5V12.5C7.51923 13.0195 7.95649 13.4375 8.5 13.4375C9.04351 13.4375 9.48077 13.0195 9.48077 12.5V7.5Z" fill="white" fillOpacity="0.8"/>
                                     </svg>
-                                    <p>9:37:22</p>
+                                    <p>{time.hours}:{time.minutes}:{time.seconds}</p>
                                 </div>
                             </div>
                             <div className="decorations__card__main">
