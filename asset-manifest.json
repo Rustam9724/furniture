@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/furniture/static/css/main.55925162.css",
-    "main.js": "/furniture/static/js/main.7864a5b6.js",
+    "main.css": "/furniture/static/css/main.6fa7feb3.css",
+    "main.js": "/furniture/static/js/main.14e5db84.js",
     "static/media/sign-in-section-background.jpg": "/furniture/static/media/sign-in-section-background.131ef7a32decba2ade03.jpg",
     "static/media/welcome-section-background.jpg": "/furniture/static/media/welcome-section-background.d4126f26c60d59ac09ff.jpg",
     "static/media/sign-up-section-background.jpg": "/furniture/static/media/sign-up-section-background.d7f1fee08f8c205eef5c.jpg",
@@ -13,11 +13,11 @@
     "static/media/mobile.svg": "/furniture/static/media/mobile.389ec4d1d79a5f7fa911.svg",
     "static/media/password.svg": "/furniture/static/media/password.c821c13d41715f0a6831.svg",
     "static/media/email.svg": "/furniture/static/media/email.2d5201959424c2005805.svg",
-    "main.55925162.css.map": "/furniture/static/css/main.55925162.css.map",
-    "main.7864a5b6.js.map": "/furniture/static/js/main.7864a5b6.js.map"
+    "main.6fa7feb3.css.map": "/furniture/static/css/main.6fa7feb3.css.map",
+    "main.14e5db84.js.map": "/furniture/static/js/main.14e5db84.js.map"
   },
   "entrypoints": [
-    "static/css/main.55925162.css",
-    "static/js/main.7864a5b6.js"
+    "static/css/main.6fa7feb3.css",
+    "static/js/main.14e5db84.js"
   ]
 }
