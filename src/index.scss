@@ -41,13 +41,14 @@ html, body {
 }
 
 .wrapper {
-    max-width: 428px;
-    margin: 0 auto;
+    // max-width: 428px;
+    // margin: 0 auto;
+    height: 100vh;
 }
 
 ._container {
     width: 100%;
-    padding: 0 20px;
+    padding: 0 4.8%;
     margin: 0 auto;
 }
 

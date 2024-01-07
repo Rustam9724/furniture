@@ -1,17 +1,19 @@
 .welcome-section {
     background: url("../../public/assets/images/welcome-section-background.jpg") no-repeat center top;
     background-size: cover;
-    padding: 44px 0 49px;
+    padding: 4.7vh 0 5.2vh; // 44px 0 49px;
     width: 100%;
     margin: 0 auto;
+    min-height: 100vh;
+    max-height: 100vh;
     
     .welcome-section__title {
         color: white;
         text-align: center;
-        font-size: 3.2rem;
+        font-size: 3.3vh; //3.2rem;
         font-weight: 800;
         line-height: normal;
-        margin: 0 0 37px;
+        margin: 0 0 3.9vh; // 0 0 37px;
     }
 
     .discounts {
@@ -20,32 +22,32 @@
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
         backdrop-filter: blur(9.5px);
         border-radius: 26px;
-        padding: 8px 10px 10px;
+        padding: 0.86vh 2.3% 1vh; //8px 10px 10px;
         color: #FFF;
-        margin: 0 0 178px;
+        margin: 0 0 19vh; //0 0 178px;
 
         .discounts__title {
             text-align: center;
-            font-size: 2.4rem;
+            font-size: 2.5vh; //2.4rem;
             font-weight: 800;
             line-height: normal;
-            margin: 0 0 5px;
+            margin: 0 0 0.53vh; //0 0 5px
         }
 
         .discounts__text {
             text-align: center;
-            font-size: 1.5rem;
+            font-size: 1.55vh; //1.5rem
             font-weight: 500;
             line-height: 138.687%;
             letter-spacing: 0.525px;
-            max-width: 339px;
-            margin: 0 auto 21px;
+            max-width: 92%; //339px
+            margin: 0 auto 2.2vh; //0 auto 21px
         }
 
         .discounts__button {
-            padding: 8px 27px;
+            padding: 0.86vh 7.2%; //8px 27px;
             margin: 0 auto;
-            border-radius: 12px;
+            border-radius: 3.2%; //12px
             display: block;
             background: linear-gradient(94deg, #EF36FF 39.68%, #9563FF 98.93%);
             box-shadow: 0px 1px 23px 0px rgba(239, 54, 255, 0.79);
@@ -53,23 +55,26 @@
             &::after {
                 content: "-20%";
                 position: absolute;
-                left: -13px;
-                bottom: -10px;
-                width: 54px;
-                height: 54px;
+                left: -3.5%; //-13px
+                bottom: -25%; //-10px
+                width: 15%; //54px
+                aspect-ratio: 1;
                 background: linear-gradient(136deg, rgba(255, 0, 0, 0.9) 44.86%, rgba(255, 90, 90, 0.9) 95.86%);
                 border-radius: 100%;
                 transform: rotate(-33deg);
                 color: rgba(255, 255, 255, 0.80);
-                font-size: 1.6rem;
+                font-size: 1.7vh; //1.6rem
                 font-weight: 800;
-                line-height: 54px;
+                line-height: 54/16 * 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
     }
 
     .wellcome-section__main {
-        padding: 18px 41px 21px 55px;
+        padding: 1.8vh 9.5% 2.1vh 5.9vh; //18px 41px 21px 55px;
         background: rgba(255, 255, 255, 0.70);
         border-radius: 35px;
 
@@ -78,8 +83,8 @@
             .welcome-carousel__radio {
                 display: flex;
                 justify-content: center;
-                column-gap: 6px;
-                margin: 0 0 16px;
+                column-gap: 1.5%; //6px
+                margin: 0 0 1.6vh; //0 0 16px
     
                 input:checked + label {
                     background-color: #8E35FF;
@@ -89,8 +94,8 @@
     
                 label {
                     display: block;
-                    width: 13px;
-                    height: 13px;
+                    width: 3.4%; //13px;
+                    aspect-ratio: 1;
                     border: 2px solid gray;
                     border-radius: 100%;
                     cursor: pointer;
@@ -107,9 +112,10 @@
                 flex: 1 0 100%;
                 position: relative;
                 transition: all 0.5s ease-out;
+                text-align: center;
 
                 .welcome-carousel__item__title {
-                    font-size: 2.4rem;
+                    font-size: 2.5vh; //2.4rem
                     text-shadow: 0px 4px 29px rgba(0, 0, 0, 0.25);
                     font-weight: 700;
                     line-height: normal;
@@ -117,11 +123,12 @@
                     background-clip: text;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
-                    margin: 0 0 15px;
+                    margin: 0 0 1.6vh; //0 0 15px
+                    text-align: center;
                 }
 
                 .welcome-carousel__item__text {
-                    font-size: 1.6rem;
+                    font-size: 1.7vh; //1.6rem
                     font-weight: 500;
                     line-height: 140.187%;
                     letter-spacing: 0.56px;
@@ -129,8 +136,9 @@
                     background-clip: text;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
-                    max-width: 286px;
-                    margin: 0 0 21px;
+                    max-width: 90%; //286px
+                    margin: 0 auto 2.1vh; //0 auto 21px;
+                    text-align: left;
                 }
 
             }
@@ -138,23 +146,23 @@
         }
 
         .weclome-section__button {
-            padding: 14px 14px 14px 54px;
-            
+            padding: 3.6% 1.4vh 3.6% 5.6vh; //14px 14px 14px 54px;
             box-shadow: 0px 7px 13px 0px rgba(239, 54, 255, 0.79);
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-            max-width: 264px;
-            margin: 0 auto 39px;
+            max-width: 79%; //264px
+            margin: 0 auto 4vh; //0 auto 39px
+            column-gap: 7.8%;
 
             p {
                 color: #FFF;
-                font-size: 2.4rem;
+                font-size: 2.5vh; //2.4rem
                 font-weight: 500;
             }
 
             div {
-                width: 46px;
+                width: 17%; // 46px
                 aspect-ratio: 1;
                 border-radius: 18px;
                 background: rgba(196, 196, 196, 0.40);
@@ -162,14 +170,14 @@
                 align-items: center;
                 justify-content: center;
                 color: white;
-                font-size: 3rem;
+                font-size: 3.1vh; //
             }
         }
 
         .welcome-section__have-account {
             color: #000;
             text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-            font-size: 1.6rem;
+            font-size: 1.7vh; //1.6rem
             font-weight: 300;
             line-height: 19/16 * 100%;
             text-align: center;
@@ -177,11 +185,9 @@
             a {
                 background: linear-gradient(91deg, #EF36FF 82.68%, #477BFF 101.12%);
                 background-clip: text;
-                // -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-                font-size: 1.6rem;
+                font-size: 1.7vh; //1.6rem
                 font-weight: 700;
-                // border-bottom: 2px solid #EF36FF;
             }
         }
     }
