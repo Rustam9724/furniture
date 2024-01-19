@@ -1,7 +1,12 @@
 {
   "files": {
-    "main.css": "/furniture/static/css/main.0669445f.css",
-    "main.js": "/furniture/static/js/main.c82c3ba0.js",
+    "main.css": "/furniture/static/css/main.7b829654.css",
+    "main.js": "/furniture/static/js/main.6917c7e1.js",
+    "static/media/background-cup.svg": "/furniture/static/media/background-cup.f48200ec9bf91088b9ab.svg",
+    "static/media/backgroun-candle.svg": "/furniture/static/media/backgroun-candle.2e34f48964057d179c86.svg",
+    "static/media/background-plant.svg": "/furniture/static/media/background-plant.b232eb27712c2c8200df.svg",
+    "static/media/background-pencils.svg": "/furniture/static/media/background-pencils.fa23f2636b2ecf16d24e.svg",
+    "static/media/background-cactus.svg": "/furniture/static/media/background-cactus.084afba9f6a22bdd26f4.svg",
     "static/media/sign-in-section-background.jpg": "/furniture/static/media/sign-in-section-background.005a17fec6373b31db8c.jpg",
     "static/media/welcome-section-background.jpg": "/furniture/static/media/welcome-section-background.d4126f26c60d59ac09ff.jpg",
     "static/media/sign-up-section-background.jpg": "/furniture/static/media/sign-up-section-background.d7f1fee08f8c205eef5c.jpg",
@@ -13,11 +18,11 @@
     "static/media/mobile.svg": "/furniture/static/media/mobile.389ec4d1d79a5f7fa911.svg",
     "static/media/password.svg": "/furniture/static/media/password.c821c13d41715f0a6831.svg",
     "static/media/email.svg": "/furniture/static/media/email.2d5201959424c2005805.svg",
-    "main.0669445f.css.map": "/furniture/static/css/main.0669445f.css.map",
-    "main.c82c3ba0.js.map": "/furniture/static/js/main.c82c3ba0.js.map"
+    "main.7b829654.css.map": "/furniture/static/css/main.7b829654.css.map",
+    "main.6917c7e1.js.map": "/furniture/static/js/main.6917c7e1.js.map"
   },
   "entrypoints": [
-    "static/css/main.0669445f.css",
-    "static/js/main.c82c3ba0.js"
+    "static/css/main.7b829654.css",
+    "static/js/main.6917c7e1.js"
   ]
 }
