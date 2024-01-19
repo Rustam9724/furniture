@@ -1,26 +1,32 @@
 .sign-section {
     background: url("../../public/assets/images/sign-in-section/sign-in-section-background.jpg") no-repeat center top;
     background-size: cover;
-    padding: 4.7vh 0 5.2vh; // 44px 0 49px;
+    padding: 4.7vh 0 0; // 44px 0 49px;
     width: 100%;
     margin: 0 auto;
     min-height: 100vh;
     max-height: 100vh;
+    display: flex;
+    flex-direction: column;
 
     &.sign-section__sign-up {
         background: url("../../public/assets/images/sign-up-section/sign-up-section-background.jpg") no-repeat center top;
+        background-size: cover;
     }
 }
 
 .sign-section__header {
-    display: flex;
-    margin: 0 0 14vh; //0 0 235px
-
+    margin: 0 0 13vh; //0 0 235px
+    padding-left: 7.5%;
+    position: relative;
+    flex-grow: 1;
+    
     &.sign-section__header_sign-up {
         margin: 0 0 18vh; //0 0 163px
     }
-
+    
     .sign-section__title {
+        position: absolute;
         padding: 1.4vh 6.7%; //13px 29px
         border-radius: 24px;
         background: rgba(71, 68, 116, 0.60);
@@ -30,12 +36,20 @@
         font-size: 3.2vh; //3rem
         font-weight: 800;
         line-height: 35/30 * 100%;
-        margin-left: 15%;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
 .sign-main {
-    padding: 5.5vh 0 0; //51px 0 0
+    // background: url("../../public/assets/images/sign-in-section/main-background.jpg") no-repeat center;
+    // background-size: contain;
+    background: linear-gradient(157deg, #7147A7 24.53%, #6F4FEE 93.59%);
+    padding: 5vh 0 1.5vh; //51px 0 0
+    border-radius: 39px 39px 0 0;
+    box-shadow: 0px -9px 15px 0px rgba(0, 0, 0, 0.40);
+    position: relative;
 
     &.sign-main_sign-up {
         padding: 2.7vh 0 0; //25px 0 0
@@ -65,13 +79,15 @@
     }
 
     .label {
-        display: block;
+        display: flex;
+        justify-content: space-between;
         border-radius: 26px;
         padding: 0 6.3%; // 0 27px
         max-width: 78%; //334px
         margin: 0 auto 1.4vh; //
         position: relative;
         background: linear-gradient(94deg, rgba(71, 68, 116, 0.70) -1.12%, rgba(50, 47, 81, 0.70) 104.55%);
+        z-index: 1;
 
         input {
             background: rgba(255, 255, 255, 0);
@@ -148,6 +164,7 @@
     }
 
     .sign-in__button {
+        position: relative;
         display: block;
         padding: 2.8vh 30%; //23px 130px
         margin: 0 auto 4.4vh; //0 auto 
@@ -157,6 +174,7 @@
         font-weight: 500;
         line-height: 28/24 * 100%;
         text-align: center;
+        z-index: 10;
     }
 
     .sign-up__button {
@@ -168,6 +186,7 @@
         font-size: 2.6vh; // 2.4rem
         font-weight: 500;
         line-height: 28/24 * 100%;
+        z-index: 1;
     }
 
     .systems {
@@ -208,7 +227,61 @@
             }
         }
     }
+
+    .sign-main__pencils {
+        position: absolute;
+        top: 10vh;
+        width: 14%;
+        aspect-ratio: 60/126;
+        background: url("../../public/assets/images/sign-in-section/background-pencils.svg") center no-repeat;
+        background-size: cover;
+    }
+
+    .sign-main__candle {
+        position: absolute;
+        top: 7vh;
+        right: 0;
+        width: 27%;
+        aspect-ratio: 115/149;
+        background: url("../../public/assets/images/sign-in-section/backgroun-candle.svg") center no-repeat;
+        background-size: cover;
+    }
+
+    .sign-main__plant {
+        position: absolute;
+        top: 31vh;
+        width: 34%;
+        aspect-ratio: 1;
+        background: url("../../public/assets/images/sign-in-section/background-plant.svg") center no-repeat;
+        background-size: cover;
+    }
+
+    .sign-main__cup {
+        position: absolute;
+        top: 38vh;
+        width: 18%;
+        aspect-ratio: 78/71;
+        background: url("../../public/assets/images/sign-in-section/background-cup.svg") center no-repeat;
+        right: 0;
+        background-size: cover;
+    }
+
+    .sign-main__cactus {
+        position: absolute;
+        bottom: 0;
+        width: 16.5%;
+        aspect-ratio: 71/120;
+        background: url("../../public/assets/images/sign-in-section/background-cactus.svg") center no-repeat;
+        right: 0;
+        background-size: cover;
+    }
 }
+
+// @media (min-width: 768px) {
+//     .sign-main {
+//         background-size: contain;
+//     }
+// }
 
 .dropdown {
     cursor: pointer;

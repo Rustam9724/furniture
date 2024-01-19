@@ -14,7 +14,6 @@ function SignInSection() {
 
     return (
         <section className="sign-section">
-            <div className="sign-section__container _container">
                 <div className="sign-section__header">
                     <Link to="/">
                         <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,36 +24,42 @@ function SignInSection() {
                     <h1 className="sign-section__title">Sign in</h1>
                 </div>
                 <div className="sign-section__main sign-main">
-                    <h2 className="sign-main__title">Welcome back! 👋</h2>
-                    <p className="sign-main__subtitle">You dont have an account yet? <Link to="/sign-up">Sign up</Link></p>
-                    <form>
-                        <label htmlFor="" className="label label_email">
-                            <input type="email" placeholder="Email adress" required/>
-                        </label>
-                        <label htmlFor="" className="label label_pasword">
-                            <input type={isPasswordHidden ? "password" : "text"} placeholder="Password" required/>
-                            <div onClick={() => setIsPasswordHidden(!isPasswordHidden)} style={passwordEyeStyle}></div>
-                        </label>
-                        <Link className="sign-in__recovery__password" to="/sign-up">Recovery password</Link>
-                        <Link className="sign-in__button button" to="/main">Sign in</Link>
-                    </form>
-                    <div className="systems">
-                        <div className="systems__header">
-                            <div></div>
-                            <p>Or continue with</p>
-                            <div></div>
-                        </div>
-                        <div className="systems__main">
-                            <div>
-                                <img src="./assets/images/sign-in-section/google.svg" alt="" />
+                    <div className="sign-section__container _container">
+                        <h2 className="sign-main__title">Welcome back! 👋</h2>
+                        <p className="sign-main__subtitle">You dont have an account yet? <Link to="/sign-up">Sign up</Link></p>
+                        <form>
+                            <label htmlFor="" className="label label_email">
+                                <input type="email" placeholder="Email adress" required/>
+                            </label>
+                            <label htmlFor="" className="label label_pasword">
+                                <input type={isPasswordHidden ? "password" : "text"} placeholder="Password" required/>
+                                <div onClick={() => setIsPasswordHidden(!isPasswordHidden)} style={passwordEyeStyle}></div>
+                            </label>
+                            <Link className="sign-in__recovery__password" to="/sign-up">Recovery password</Link>
+                            <Link className="sign-in__button button" to="/main">Sign in</Link>
+                        </form>
+                        <div className="systems">
+                            <div className="systems__header">
+                                <div></div>
+                                <p>Or continue with</p>
+                                <div></div>
                             </div>
-                            <div>
-                                <img src="./assets/images/sign-in-section/apple.svg" alt="" />
+                            <div className="systems__main">
+                                <div>
+                                    <img src="./assets/images/sign-in-section/google.svg" alt="" />
+                                </div>
+                                <div>
+                                    <img src="./assets/images/sign-in-section/apple.svg" alt="" />
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div className="sign-main__pencils"></div>
+                    <div className="sign-main__candle"></div>
+                    <div className="sign-main__plant"></div>
+                    <div className="sign-main__cup"></div>
+                    <div className="sign-main__cactus"></div>
                 </div>
-            </div>
         </section>
     )
 }
