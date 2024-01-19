@@ -22,7 +22,7 @@
     flex-grow: 1;
     
     &.sign-section__header_sign-up {
-        margin: 0 0 18vh; //0 0 163px
+        margin: 0 0 10vh; //0 0 163px
     }
     
     .sign-section__title {
@@ -43,8 +43,6 @@
 }
 
 .sign-main {
-    // background: url("../../public/assets/images/sign-in-section/main-background.jpg") no-repeat center;
-    // background-size: contain;
     background: linear-gradient(157deg, #7147A7 24.53%, #6F4FEE 93.59%);
     padding: 5vh 0 1.5vh; //51px 0 0
     border-radius: 39px 39px 0 0;
@@ -52,7 +50,7 @@
     position: relative;
 
     &.sign-main_sign-up {
-        padding: 2.7vh 0 0; //25px 0 0
+        padding: 2.6vh 0 1.5vh; //25px 0 0
     }
 
     .sign-main__title {
@@ -99,8 +97,9 @@
             background-position: left center;
             background-repeat: no-repeat;
             padding: 0 0 0 15%; //0 0 0 42px
-            max-width: 85%;
+            max-width: 60%;
             flex-grow: 1; 
+            padding-right: 5px;
             
             &::placeholder {
                 color: rgba(255, 255, 255, 0.49);
@@ -276,12 +275,6 @@
         background-size: cover;
     }
 }
-
-// @media (min-width: 768px) {
-//     .sign-main {
-//         background-size: contain;
-//     }
-// }
 
 .dropdown {
     cursor: pointer;
