@@ -105,7 +105,7 @@ function DeskLamp() {
                 <Footer />
             </div>
             <div className="desk-lamp-image">
-                <img src="./assets/images/desk-lamp.svg" alt="" />
+                <img src="./assets/images/desk-lamp-section/desk-lamp.svg" alt="" />
             </div>
         </section>
     )

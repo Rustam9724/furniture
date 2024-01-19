@@ -86,12 +86,12 @@ function Decorations() {
                         <input type="text" placeholder="Search product..."/>
                     </label>
                     <div className="decorations__notififications">
-                        <img src="./assets/images/notifications.svg" alt="" />
+                        <img src="./assets/images/decorations/notifications.svg" alt="" />
                     </div>
                 </div>
                 <div className="notifications__title-block">
                     <h1 className="notifications__title">Find the unique decorations for your home</h1>
-                    <img src="./assets/images/candle.svg" alt="" />
+                    <img src="./assets/images/decorations/candle.svg" alt="" />
                 </div>
                 <div className="notifications__carousel" onTouchStart={e => setStartPoint(e, 'X')} onTouchEnd={e => setSliderFinishPoint(e)}>
                     <div 
@@ -137,7 +137,7 @@ function Decorations() {
                             </div>
                             <div className="decorations__card__main">
                                 <div className="decoraitions__card__image">
-                                    <img src="./assets/images/lamp.svg" alt="" />
+                                    <img src="./assets/images/decorations/lamp.svg" alt="" />
                                 </div>
                                 <div className="decorations__card__description dec-description">
                                     <h2 className="dec-description__title">Desk Lamp</h2>
@@ -153,7 +153,7 @@ function Decorations() {
                         <div className={productNumber === 1 && `active-card__wrapper`}>
                             <div className="decorations__card__main">
                                 <div className="decoraitions__card__image">
-                                    <img src="./assets/images/candle-set.svg" alt="" />
+                                    <img src="./assets/images/decorations/candle-set.svg" alt="" />
                                 </div>
                                 <div className="decorations__card__description dec-description">
                                     <h2 className="dec-description__title">Set of Candles</h2>
@@ -168,7 +168,7 @@ function Decorations() {
                         <div className={productNumber === 2 && `active-card__wrapper`}>
                             <div className="decorations__card__main">
                                 <div className="decoraitions__card__image">
-                                    <img src="./assets/images/clock.svg" alt="" />
+                                    <img src="./assets/images/decorations/clock.svg" alt="" />
                                 </div>
                                 <div className="decorations__card__description dec-description">
                                     <h2 className="dec-description__title">Alarm Clock</h2>

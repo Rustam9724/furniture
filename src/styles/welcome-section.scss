@@ -1,5 +1,5 @@
 .welcome-section {
-    background: url("../../public/assets/images/welcome-section-background.jpg") no-repeat center top;
+    background: url("../../public/assets/images/welcome-section/welcome-section-background.jpg") no-repeat center top;
     background-size: cover;
     padding: 4.7vh 0 5.2vh; // 44px 0 49px;
     width: 100%;
@@ -26,6 +26,25 @@
         color: #FFF;
         margin: 0 0 19vh; //0 0 178px;
 
+        &::after {
+            content: "-20%";
+            position: absolute;
+            left: -3.5%; //-13px
+            bottom: -25%; //-10px
+            width: 15%; //54px
+            aspect-ratio: 1;
+            background: linear-gradient(136deg, rgba(255, 0, 0, 0.9) 44.86%, rgba(255, 90, 90, 0.9) 95.86%);
+            border-radius: 100%;
+            transform: rotate(-33deg);
+            color: rgba(255, 255, 255, 0.80);
+            font-size: 1.7vh; //1.6rem
+            font-weight: 800;
+            line-height: 54/16 * 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         .discounts__title {
             text-align: center;
             font-size: 2.5vh; //2.4rem;
@@ -51,25 +70,6 @@
             display: block;
             background: linear-gradient(94deg, #EF36FF 39.68%, #9563FF 98.93%);
             box-shadow: 0px 1px 23px 0px rgba(239, 54, 255, 0.79);
-
-            &::after {
-                content: "-20%";
-                position: absolute;
-                left: -3.5%; //-13px
-                bottom: -25%; //-10px
-                width: 15%; //54px
-                aspect-ratio: 1;
-                background: linear-gradient(136deg, rgba(255, 0, 0, 0.9) 44.86%, rgba(255, 90, 90, 0.9) 95.86%);
-                border-radius: 100%;
-                transform: rotate(-33deg);
-                color: rgba(255, 255, 255, 0.80);
-                font-size: 1.7vh; //1.6rem
-                font-weight: 800;
-                line-height: 54/16 * 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
         }
     }
 

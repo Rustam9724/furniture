@@ -1,6 +1,6 @@
 .decorations {
     padding: 46px 0 0;
-    background: url("../../public/assets/images/decorations-background.jpg") no-repeat center top;
+    background: url("../../public/assets/images/decorations/decorations-background.jpg") no-repeat center top;
     min-height: 890px;
     max-height: 890px;
     position: relative;
@@ -23,7 +23,7 @@
             max-width: 312px;
         
             input {
-                background: url("../../public/assets/images/glass.svg") no-repeat left center;
+                background: url("../../public/assets/images/decorations/glass.svg") no-repeat left center;
                 color: rgba(255, 255, 255, 0.60);
                 font-size: 2rem;
                 line-height: 59/20 * 100%;
