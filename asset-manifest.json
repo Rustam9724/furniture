@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/furniture/static/css/main.75f09b1c.css",
-    "main.js": "/furniture/static/js/main.0b025194.js",
+    "main.css": "/furniture/static/css/main.d0fbfb9c.css",
+    "main.js": "/furniture/static/js/main.fd5a07d5.js",
     "static/media/background-cup.svg": "/furniture/static/media/background-cup.f48200ec9bf91088b9ab.svg",
     "static/media/backgroun-candle.svg": "/furniture/static/media/backgroun-candle.2e34f48964057d179c86.svg",
     "static/media/background-plant.svg": "/furniture/static/media/background-plant.b232eb27712c2c8200df.svg",
@@ -13,16 +13,15 @@
     "static/media/decorations-background.jpg": "/furniture/static/media/decorations-background.01b89f1544cdeb3df656.jpg",
     "static/media/desk-lamp-background.jpg": "/furniture/static/media/desk-lamp-background.2ab0d1646666d6e09aed.jpg",
     "static/media/name.svg": "/furniture/static/media/name.49083401d0302b2bebd4.svg",
-    "static/media/glass.svg": "/furniture/static/media/glass.250cc17a86aeea7cd53e.svg",
     "index.html": "/furniture/index.html",
     "static/media/mobile.svg": "/furniture/static/media/mobile.389ec4d1d79a5f7fa911.svg",
     "static/media/password.svg": "/furniture/static/media/password.c821c13d41715f0a6831.svg",
     "static/media/email.svg": "/furniture/static/media/email.2d5201959424c2005805.svg",
-    "main.75f09b1c.css.map": "/furniture/static/css/main.75f09b1c.css.map",
-    "main.0b025194.js.map": "/furniture/static/js/main.0b025194.js.map"
+    "main.d0fbfb9c.css.map": "/furniture/static/css/main.d0fbfb9c.css.map",
+    "main.fd5a07d5.js.map": "/furniture/static/js/main.fd5a07d5.js.map"
   },
   "entrypoints": [
-    "static/css/main.75f09b1c.css",
-    "static/js/main.0b025194.js"
+    "static/css/main.d0fbfb9c.css",
+    "static/js/main.fd5a07d5.js"
   ]
 }
