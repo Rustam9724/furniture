@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/furniture/static/css/main.d0fbfb9c.css",
+    "main.css": "/furniture/static/css/main.d2b1f2a0.css",
     "main.js": "/furniture/static/js/main.fd5a07d5.js",
     "static/media/background-cup.svg": "/furniture/static/media/background-cup.f48200ec9bf91088b9ab.svg",
     "static/media/backgroun-candle.svg": "/furniture/static/media/backgroun-candle.2e34f48964057d179c86.svg",
@@ -17,11 +17,11 @@
     "static/media/mobile.svg": "/furniture/static/media/mobile.389ec4d1d79a5f7fa911.svg",
     "static/media/password.svg": "/furniture/static/media/password.c821c13d41715f0a6831.svg",
     "static/media/email.svg": "/furniture/static/media/email.2d5201959424c2005805.svg",
-    "main.d0fbfb9c.css.map": "/furniture/static/css/main.d0fbfb9c.css.map",
+    "main.d2b1f2a0.css.map": "/furniture/static/css/main.d2b1f2a0.css.map",
     "main.fd5a07d5.js.map": "/furniture/static/js/main.fd5a07d5.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0fbfb9c.css",
+    "static/css/main.d2b1f2a0.css",
     "static/js/main.fd5a07d5.js"
   ]
 }
