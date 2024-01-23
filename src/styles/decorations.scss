@@ -1,34 +1,49 @@
 .decorations {
-    padding: 46px 0 0;
+    padding: 4.9vh 0 0; //46px 0 0
     background: url("../../public/assets/images/decorations/decorations-background.jpg") no-repeat center top;
-    min-height: 890px;
-    max-height: 890px;
     position: relative;
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    max-height: 100vh;
     
     .decorations__container {
         position: relative;
-        max-width: 446px;
+        // max-width: 446px; //446px 
     }
 
     .decorations__header {
         display: flex;
-        column-gap: 15px;
+        column-gap: 3.5%; //15px
         align-items: center;
-        margin: 0 0 30px;
+        justify-content: center;
+        margin: 0 0 3.2vh; //0 0 30px
 
         .decorations__search {
             border-radius: 26px;
             background: linear-gradient(94deg, rgba(71, 68, 116, 0.70) -1.12%, rgba(50, 47, 81, 0.70) 104.55%);
-            padding: 0 21px;
-            max-width: 312px;
+            padding: 0 2.5vh; //0 21px
+            max-width: 73%; //312px
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            column-gap: 3%;
+
+            svg {
+                display: block;
+                width: 8.6%;
+            }
         
             input {
-                background: url("../../public/assets/images/decorations/glass.svg") no-repeat left center;
+                // background: url("../../public/assets/images/decorations/glass.svg") no-repeat left center;
+                background-color: rgba(255, 255, 255, 0);
                 color: rgba(255, 255, 255, 0.60);
-                font-size: 2rem;
+                font-size: 2.15vh; //2rem
                 line-height: 59/20 * 100%;
-                padding-left: 40px;
+                // padding-left: 13%; //40px
                 outline: none;
+                max-width: 70%;
                 
                 &::placeholder {
                     color: rgba(255, 255, 255, 0.60);
@@ -37,7 +52,7 @@
         }
 
         .decorations__notififications {
-            padding: 10px 15.5px;
+            padding: 1vh 3.9%; //10px 15.5px
             border-radius: 20px;
             background: rgba(255, 255, 255, 0.08);
         }
@@ -47,26 +62,31 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        column-gap: 10px;
-        margin: 0 0 16px;
+        column-gap: 2.3%; //10px
+        margin: 0 0 1.7vh; //0 0 16px
 
         .notifications__title {
             color: #FFF;
-            font-size: 3rem;
+            font-size: 3.2vh; //
             font-weight: 800;
             line-height: 123.188%;
             letter-spacing: 0.6px;
-            max-width: 220px;
+            max-width: 55%; //220px
+        }
+
+        img {
+            width: 18%;
+            aspect-ratio: 77/99;
         }
     }
 
     .notifications__carousel {
         overflow: hidden;
         display: flex;
-        column-gap: 21px;
+        column-gap: 4.9%; //21px
         align-items: center;
-        margin: 0 0 20px;
-        height: 134px;
+        margin: 0 0 2.15vh; //0 0 20px
+        height: 14.5vh; //134px
 
         .notifications__carousel__item {
             display: flex;
@@ -75,13 +95,17 @@
             border-radius: 25px;
             background: rgba(71, 68, 116, 0.75);
             flex-shrink: 0;
-            width: 87px;
-            height: 116px;
+            width: 20%; //87px
+            height: 12.5vh; //116px
             transition: all 0.1s ease-in;
+
+            svg {
+                max-width: 55%;
+            }
             
             &.notifications__carousel__item_active {
-                width: 100px;
-                height: 134px;
+                width: 23%; //100px
+                height: 14.5vh; //134px
                 background: #CD1EFF;
                 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
             }
@@ -89,7 +113,7 @@
             p {
                 color: #FFF;
                 font-family: Roboto;
-                font-size: 3.2rem;
+                font-size: 3.4vh; //3.2rem
                 font-weight: 800;
                 line-height: 38/32 * 100%;
             }
@@ -109,26 +133,26 @@
             .active-card__wrapper {
                 border-radius: 25px;
                 width: 100%;
-                height: 221px;
-                padding-top: 65px;
+                // height: 24vh; //221px
+                padding: 7vh 5% 2.7vh; //65px 24px 25px
                 background: linear-gradient(94deg, rgba(71, 68, 116, 0.70) -1.12%, rgba(50, 47, 81, 0.70) 104.55%);
                 position: relative;
 
                 .promotion {
                     display: flex;
                     align-items: center;
-                    column-gap: 12px;
+                    column-gap: 2.8%; //12px
                     justify-content: center;
                     position: absolute;
-                    top: 14px;
+                    top: 0.5vh; //14px
                     left: 50%;
                     transform: translateX(-50%);
-                    min-width: max-content;
-    
+                    min-width: 85%;
+
                     p {
                         color: white;
                         font-family: Roboto;
-                        font-size: 2.2rem;
+                        font-size: 2.3vh; //2.2rem
                         font-weight: 700;
                         line-height: 138.687%;
                         letter-spacing: 0.77px;
@@ -137,13 +161,20 @@
                     .promotion__timer {
                         display: flex;
                         align-items: center;
-                        column-gap: 9px;
-                        padding: 9px 11.5px;
+                        padding: 0.97vh 2.7%; //9px 11.5px
                         border-radius: 103px;
                         background: rgba(10, 11, 29, 0.39);
+                        min-width: 27%;
+                        justify-content: space-between;
+                        column-gap: 2.1%;
+
+                        svg {
+                            max-width: 16%;
+                            display: block;
+                        }
     
                         p {
-                            font-size: 1.6rem;
+                            font-size: 1.7vh; //1.6rem
                             font-weight: 600;
                             line-height: 138.687%;
                             letter-spacing: 0.56px;
@@ -152,53 +183,72 @@
                             -webkit-background-clip: text;
                             -webkit-text-fill-color: transparent;
                         }
+
+                        // @media (max-height: 480px) {
+                        //     p {
+                        //         font-size: 1.2rem;
+                        //     }
+                        // } 
                     }
                 }
             }
             
             &:not(:last-child) {
-                margin-bottom: 13px;
+                margin-bottom: 1.4vh; //13px
             }
             
             .decorations__card__main {
                 background: #2B2853;
                 border-radius: 25px;
                 display: flex;
-                column-gap: 14px;
+                column-gap: 3.2%; //14px
 
                 .decoraitions__card__image {
                     border-radius: 25px;
                     background: linear-gradient(148deg, rgba(115, 49, 255, 0.90) 8.96%, rgba(115, 49, 255, 0.00) 83.97%);
-                    padding: 12px 12px 15px;
+                    padding: 1.3vh 3.15% 1.6vh; //12px 12px 15px
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
                     img {
-                        width: 54px;
-                        height: 70px;
+                        width: 100%; //54px
+                        // height: 70px;
+                        aspect-ratio: 54/70;
                     }
                 }
 
                 .dec-description {
-                    padding: 14px 14px 4px 0;
+                    padding: 1.5vh 3.7% 0.43vh 0; //14px 14px 4px 0
                     color: #FFF;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
 
                     .dec-description__title {
-                        font-size: 1.6rem;
+                        font-size: 1.7vh; //1.6rem
                         font-weight: 800;
                         line-height: 19/16 * 100%;
-                        margin: 0 0 2px;
+                        // margin: 0 0 0.2vh; //0 0 2px
                     }
 
                     p {
-                        font-size: 1.1rem;
+                        font-size: 1.2vh; //1.1rem
                         line-height: 138.687%;
                         letter-spacing: 0.385px;
-                        margin: 0 0 5px;
+                        // margin: 0 0 0.53vh; //0 0 5px
+                    }
+
+                    .dec-description__price-block {
+                        display: flex;
+                        width: 100%;
                     }
 
                     .dec-description__price {
                         display: inline-block;
-                        padding: 3px 3.5px 1px;
-                        font-size: 1.2rem;
+                        padding: 0.32vh 1.3% 0.1vh; //3px 3.5px 1px
+                        font-size: 1.3vh; //1.2rem
                         font-weight: 600;
                         line-height: 138.687%;
                         letter-spacing: 0.42px;
@@ -216,7 +266,7 @@
 
 
                         &:not(:last-child) {
-                            margin-right: 3px;
+                            margin-right: 3px; //1%
                         }
                     }
                 }
@@ -225,40 +275,40 @@
             &.decorations__card_active {
 
                 .decorations__card__main {
-                    column-gap: 31px;
+                    column-gap: 7.2%; //31px
 
                     .decoraitions__card__image {
-                        background: linear-gradient(148deg, rgba(115, 49, 255, 0.90) 8.96%, rgba(115, 49, 255, 0.00) 83.97%);
-                        padding: 16px 21px 17px 16px;
+                        padding: 1.7vh 4.9% 1.8vh 3.7%; //16px 21px 17px 16px
 
                         img {
-                            width: 59px;
-                            height: 99px;
+                            width: 100%; //59px
+                            // height: 99px;
+                            aspect-ratio: 59/99;
                         }
                     }
 
                     .dec-description {
-                        padding: 8px 14px 8px 0;
+                        padding: 0.86vh 3.3% 0.86% 0; //8px 14px 8px 0
 
                         .dec-description__title {
-                            font-size: 2.4rem;
-                            margin: 0 0 6px;
+                            font-size: 2.6vh; //2.4rem
+                            margin: 0 0 0.64vh; //0 0 6px
                         }
 
                         p {
-                            font-size: 1.5rem;
+                            font-size: 1.6vh; //1.5rem
                             letter-spacing: 0.525px;
-                            margin: 0 0 10px;
+                            margin: 0 0 1vh; //0 0 10px
                         }
 
                         .dec-description__price {
-                            padding: 5.5px 11.5px;
-                            font-size: 1.4rem;
+                            padding: 0.59vh 4%; //5.5px 11.5px
+                            font-size: 1.5vh; //1.4rem
                             letter-spacing: 0.49px;
                             border-radius: 9px;
 
                             &:not(:last-child) {
-                                margin-right: 3px;
+                                margin-right: 1%; //3px
                             }
                         }
                     }

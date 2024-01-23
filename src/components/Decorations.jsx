@@ -39,7 +39,7 @@ function Decorations() {
     }
 
     const carouselItemStyle = {
-        marginLeft: `${slideNumber * -28}%`,
+        marginLeft: `${slideNumber * -25}%`,
     }
 
     function setProductsFinishPoint(e) {
@@ -59,8 +59,17 @@ function Decorations() {
         }
     }
 
+    let mrgTop;
+    if (document.documentElement.clientHeight <= 480) {
+        mrgTop = -29;
+    } else if (document.documentElement.clientHeight > 480 && document.documentElement.clientHeight <= 569) {
+        mrgTop = -20;
+    } else {
+        mrgTop = -13
+    }
+
     const productsItemStyle = {
-        marginTop: `${productNumber * -36}%`,
+        marginTop:`${productNumber * mrgTop}vh`,
     }
 
     // Таймер
@@ -83,6 +92,9 @@ function Decorations() {
             <div className="decorations__container _container">
                 <div className="decorations__header">
                     <label className="decorations__search">
+                        <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26.383 23.3957L20.0707 17.0841C21.5062 14.9533 22.2144 12.2911 21.8352 9.45425C21.1887 4.62904 17.2336 0.702329 12.4031 0.0908335C5.22119 -0.817841 -0.817974 5.22065 0.0908535 12.4018C0.702574 17.2338 4.63025 21.1917 9.45651 21.835C12.2936 22.214 14.9567 21.5061 17.0872 20.0707L23.3995 26.3823C24.2232 27.2059 25.559 27.2059 26.3827 26.3823C27.2057 25.5576 27.2057 24.2183 26.383 23.3957ZM4.17124 10.9676C4.17124 7.24597 7.19926 4.21828 10.9213 4.21828C14.6433 4.21828 17.6713 7.24597 17.6713 10.9676C17.6713 14.6892 14.6433 17.7168 10.9213 17.7168C7.19926 17.7168 4.17124 14.6902 4.17124 10.9676Z" fill="white" fill-opacity="0.6"/>
+                        </svg>
                         <input type="text" placeholder="Search product..."/>
                     </label>
                     <div className="decorations__notififications">
@@ -158,8 +170,10 @@ function Decorations() {
                                 <div className="decorations__card__description dec-description">
                                     <h2 className="dec-description__title">Set of Candles</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <div className="dec-description__price">$8.99</div>
-                                    <div className="dec-description__price">🍃eco-friendly</div>
+                                    <div className="dec-description__price-block">
+                                        <div className="dec-description__price">$8.99</div>
+                                        <div className="dec-description__price">🍃eco-friendly</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -173,15 +187,17 @@ function Decorations() {
                                 <div className="decorations__card__description dec-description">
                                     <h2 className="dec-description__title">Alarm Clock</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <div className="dec-description__price">$8.99</div>
-                                    <div className="dec-description__price">🍃eco-friendly</div>
+                                    <div className="dec-description__price-block">
+                                        <div className="dec-description__price">$8.99</div>
+                                        <div className="dec-description__price">🍃eco-friendly</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </Link>
                 </div>
             </div>
-                <Footer />
+            <Footer />
         </section>
     )
 }
